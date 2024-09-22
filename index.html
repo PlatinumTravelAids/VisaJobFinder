@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visa Job Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Visa Job Sponsorship Finder</h1>
+
+    <!-- Candidate Form -->
+    <form id="candidate-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="job-role">Job Role:</label>
+      <input type="text" id="job-role" placeholder="e.g., Software Developer" required>
+
+      <label for="skills">Skills:</label>
+      <textarea id="skills" placeholder="e.g., JavaScript, Python" required></textarea>
+
+      <label for="location">Preferred Location:</label>
+      <select id="location" required>
+        <option value="schengen">Schengen Area</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Job Listings -->
+    <div id="job-results">
+      <h2>Top 10 Job Offers</h2>
+      <ul id="job-list"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

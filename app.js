@@ -10,7 +10,8 @@ document.getElementById('candidate-form').addEventListener('submit', function(e)
   const location = document.getElementById('location').value;
 
   // Fetch visa sponsorship jobs (using a dummy API for now)
-  fetch(`https://api.adzuna.com/v1/api/jobs/${location}/search/1?app_id=YOUR_APP_ID&app_key=YOUR_API_KEY&results_per_page=10&what=${jobRole}`)
+  fetchconst apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.adzuna.com/v1/api/jobs/schengen/search/1?app_id=YOUR_APP_ID&app_key=YOUR_API_KEY&results_per_page=10&what=Painter,Cleaner,Caregiving';
+=YOUR_APP_ID&app_key=YOUR_API_KEY&results_per_page=10&what=${jobRole}`)
     .then(response => response.json())
     .then(data => {
       // Display top 10 jobs
